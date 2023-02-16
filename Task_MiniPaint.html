@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas 3</title>
+	<link rel="stylesheet" type="text/css" href="css/MiniPaint.css">
+	<script type="text/javascript" src="js/MiniPaint.js"></script>
+</head>
+<body onload="main_MiniPaint();">
+	<canvas id="canvas_paint" width="600" height="300"
+	style="border: 1px solid #000;"></canvas>
+	<div class="buttons">
+		<input type="color" class="color btn" id="chosenColor">
+		<select name="linewidth" id="lineWidth" class="width btn">
+			<option value="1">1 pt</option>
+			<option value="2">2 pt</option>
+			<option value="3">3 pt</option>
+			<option value="4">4 pt</option>
+			<option value="5">5 pt</option>
+			<option value="6">6 pt</option>
+			<option value="7">7 pt</option>
+			<option value="8">8 pt</option>
+			<option value="9">9 pt</option>
+			<option value="10">10 pt</option>
+			<option value="11">11 pt</option>
+			<option value="12">12 pt</option>
+			<option value="14">14 pt</option>
+	<!-- 	<option value="16">16 pt</option>
+			<option value="18">18 pt</option>
+			<option value="20">20 pt</option>
+			<option value="24">24 pt</option>
+			<option value="28">28 pt</option>
+			<option value="32">32 pt</option>
+			<option value="36">36 pt</option>		-->
+		</select>
+		<button onclick="clearCanvas();" class="btn clear" >Clear</button>
+		<img src="img/download.png" title="Download" alt="download" onclick="saveCanvasAsImageFile();" class="img">
+	</div>
+</body>
+</html>
